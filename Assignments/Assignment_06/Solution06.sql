@@ -16,9 +16,11 @@ WHERE Odate BETWEEN '1990-10-03' AND '1990-10-04';
 Select Cname from Customers,Salespeople where Sname= 'Peel' and 'Motika';
 
 -- 3) Write a query that will produce all the customers whose names begin with a letter from ‘A’ to ‘G’.
+
 SELECT * FROM Customers WHERE Cname >= 'A' AND Cname <= 'G';
 
 -- 4) Write a query that selects all customers whose names begin with the letter ‘C’.
+
 Select * from customers where Cname like 'C%';
 
 /*
@@ -32,4 +34,5 @@ Select * from customers where Cname like 'C%';
 */
 
 -- 5) Write a query that selects all orders except those with zeroes or NULLs in the amt field.
+
 Select * from ORDERS where Amt != 0 and Amt is not NULL;
